@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Weekly Timetable | B.Tech CSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="timetable-container">
+        <!-- Top Navigation -->
+        <nav class="nav-bar">
+            <a href="../../index.html">← Back to Master Hub</a>
+            <span>Assignment 3: College Time Table</span>
+        </nav>
+
+        <!-- Header -->
+        <header class="table-header">
+            <h1>Apex Institute of Technology & Engineering</h1>
+            <h2>Department of Computer Science & Engineering</h2>
+            <p class="meta-info">Semester: V (Session 2026) • Section: CSE-A • Classroom: Room 304</p>
+        </header>
+
+        <!-- Timetable Table Component -->
+        <div class="table-card">
+            <div class="table-responsive">
+                <table class="timetable">
+                    <caption>Weekly Academic Schedule (Monday – Friday)</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="th-day">Day</th>
+                            <th scope="col">Period 1<br><span class="time-label">09:00 - 10:00</span></th>
+                            <th scope="col">Period 2<br><span class="time-label">10:00 - 11:00</span></th>
+                            <th scope="col">Period 3<br><span class="time-label">11:00 - 12:00</span></th>
+                            <th scope="col">Period 4<br><span class="time-label">12:00 - 01:00</span></th>
+                            <th scope="col" class="th-lunch">Lunch Break<br><span class="time-label">01:00 - 02:00</span></th>
+                            <th scope="col">Period 5<br><span class="time-label">02:00 - 03:00</span></th>
+                            <th scope="col">Period 6<br><span class="time-label">03:00 - 04:00</span></th>
+                            <th scope="col">Period 7<br><span class="time-label">04:00 - 05:00</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Monday -->
+                        <tr>
+                            <th scope="row" class="day-cell">Monday</th>
+                            <td class="theory-slot">
+                                <span class="subject">Data Structures</span>
+                                <span class="faculty">Dr. R. K. Sharma</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Operating Systems</span>
+                                <span class="faculty">Prof. S. Gupta</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Web Engineering</span>
+                                <span class="faculty">Er. Dilip Tech</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Computer Networks</span>
+                                <span class="faculty">Dr. A. Verma</span>
+                            </td>
+                            <!-- Rowspan 5 spans lunch across all 5 weekdays -->
+                            <td rowspan="5" class="lunch-slot">
+                                <div class="lunch-text">LUNCH BREAK</div>
+                            </td>
+                            <!-- Rowspan/Colspan for 2-hour practical lab -->
+                            <td colspan="2" class="lab-slot">
+                                <span class="lab-badge">🧪 PRACTICAL LAB</span>
+                                <span class="subject">Web Technologies Lab (HTML5 / CSS3)</span>
+                                <span class="faculty">Lab Room 204 • Er. Dilip Tech & Er. Neha</span>
+                            </td>
+                            <td class="library-slot">
+                                <span class="subject">Library / Self Study</span>
+                            </td>
+                        </tr>
+
+                        <!-- Tuesday -->
+                        <tr>
+                            <th scope="row" class="day-cell">Tuesday</th>
+                            <td class="theory-slot">
+                                <span class="subject">Operating Systems</span>
+                                <span class="faculty">Prof. S. Gupta</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Web Engineering</span>
+                                <span class="faculty">Er. Dilip Tech</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Database Systems</span>
+                                <span class="faculty">Prof. M. Patel</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Software Engg</span>
+                                <span class="faculty">Dr. P. Sen</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Discrete Maths</span>
+                                <span class="faculty">Dr. V. Rao</span>
+                            </td>
+                            <td colspan="2" class="lab-slot">
+                                <span class="lab-badge">🧪 PRACTICAL LAB</span>
+                                <span class="subject">Database Management Lab (SQL)</span>
+                                <span class="faculty">Lab Room 102 • Prof. M. Patel</span>
+                            </td>
+                        </tr>
+
+                        <!-- Wednesday -->
+                        <tr>
+                            <th scope="row" class="day-cell">Wednesday</th>
+                            <td class="theory-slot">
+                                <span class="subject">Computer Networks</span>
+                                <span class="faculty">Dr. A. Verma</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Data Structures</span>
+                                <span class="faculty">Dr. R. K. Sharma</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Web Engineering</span>
+                                <span class="faculty">Er. Dilip Tech</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Constitution & Ethics</span>
+                                <span class="faculty">Dr. K. Joshi</span>
+                            </td>
+                            <td colspan="3" class="lab-slot highlight-extended">
+                                <span class="lab-badge">💻 EXTENDED MINI-PROJECT SPRINT</span>
+                                <span class="subject">Full-Stack Capstone Project Development</span>
+                                <span class="faculty">Advanced Computing Centre • All Faculty Mentors</span>
+                            </td>
+                        </tr>
+
+                        <!-- Thursday -->
+                        <tr>
+                            <th scope="row" class="day-cell">Thursday</th>
+                            <td colspan="2" class="lab-slot">
+                                <span class="lab-badge">🧪 PRACTICAL LAB</span>
+                                <span class="subject">Data Structures & C++ Lab</span>
+                                <span class="faculty">Lab Room 201 • Dr. R. K. Sharma</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Database Systems</span>
+                                <span class="faculty">Prof. M. Patel</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Operating Systems</span>
+                                <span class="faculty">Prof. S. Gupta</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Web Engineering</span>
+                                <span class="faculty">Er. Dilip Tech</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Computer Networks</span>
+                                <span class="faculty">Dr. A. Verma</span>
+                            </td>
+                            <td class="seminar-slot">
+                                <span class="subject">Technical Seminar</span>
+                                <span class="faculty">Student Presentations</span>
+                            </td>
+                        </tr>
+
+                        <!-- Friday -->
+                        <tr>
+                            <th scope="row" class="day-cell">Friday</th>
+                            <td class="theory-slot">
+                                <span class="subject">Software Engg</span>
+                                <span class="faculty">Dr. P. Sen</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Discrete Maths</span>
+                                <span class="faculty">Dr. V. Rao</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Database Systems</span>
+                                <span class="faculty">Prof. M. Patel</span>
+                            </td>
+                            <td class="theory-slot">
+                                <span class="subject">Data Structures</span>
+                                <span class="faculty">Dr. R. K. Sharma</span>
+                            </td>
+                            <td colspan="2" class="lab-slot">
+                                <span class="lab-badge">🧪 PRACTICAL LAB</span>
+                                <span class="subject">Operating Systems Linux Shell Lab</span>
+                                <span class="faculty">Lab Room 303 • Prof. S. Gupta</span>
+                            </td>
+                            <td class="sports-slot">
+                                <span class="subject">Sports / Club Activities</span>
+                                <span class="faculty">Campus Ground</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Legend Section -->
+            <div class="legend-row">
+                <div class="legend-item"><span class="legend-color color-theory"></span> Theory Lecture</div>
+                <div class="legend-item"><span class="legend-color color-lab"></span> Practical Lab Period (Highlighted)</div>
+                <div class="legend-item"><span class="legend-color color-lunch"></span> Lunch Recess (Rowspan)</div>
+                <div class="legend-item"><span class="legend-color color-activity"></span> Seminar / Activities</div>
+            </div>
+        </div>
+
+        <footer class="table-footer">
+            <p>&copy; 2026 Academic Affairs • Apex Institute of Technology & Engineering</p>
+        </footer>
+    </div>
+
+</body>
+</html>
